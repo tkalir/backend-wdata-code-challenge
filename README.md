@@ -61,8 +61,9 @@ Temperature in Celsius, Precipitation Rate in mm/hr.
     ```
 
 ## What is Expected
-- Send us a URL to a working service with an example of how to use it. For example: `http://my-cool-service.com/weather/data?lat=42.332&lon=35.421`
-- Send us the source code, or even better, a link to a git repository with the source code.
+- A working end to end service.
+- A github repository with your solution.
+- Add a section to your readme: `How to use this service` for example `http://my-cool-service.com/weather/data?lat=42.332&lon=35.421` **Make sure that the URL that you are providing is WORKING!** (`curl <YOUR_URŁ>` should provide a result)
 
 ### Implementation
 The service should have 2 parts:
@@ -72,7 +73,7 @@ The service should have 2 parts:
 ### Tips
 - **Programming Language**: Pick whatever you like, pick the language that you are most comfortable with.
 - **Database**: SQL/NoSQL, whatever you think will be fast and good for this task.
-- You can use any free hosting provider such as render.com, Heroku, AWS, GCS, Azure, DigitalOcean, etc... (if you don't know any of them, we recommend using render.com as it is the easiest to start with and we tested that task can run on it).
+- You can use any free hosting provider such as render.com, Heroku, AWS, GCS, Azure, DigitalOcean, etc... (if you don't know any of them, we recommend using render.com as it is the easiest to start with and we tested that the task can run on it).
 - Take your time to go over the instructions and attached data before you begin.
 
 ### General
