@@ -12,13 +12,15 @@ For this task, we will use CSV files as our data source just to make it simple. 
 
 ## The Task
 
-In this task, we want you to create a web service that will give the user a timeline of a weather insight - if a certain condition, based on the weather parameters, is met for a specific location.  Each file has 5 columns: Longitude, Latitude, forecast time, Temperature, Precipitation. The service will have as single route:
+In this task, we want you to create a web service that will give the user a timeline of a weather insight - if a certain condition, based on the weather parameters, is met for a specific location.
+To do so, you will have to ingest several files containing weather data into a database of you choich. Each file has 5 columns: Longitude, Latitude, forecast time, Temperature, Precipitation.
+The service will expose a single route:
 
 1. `/weather/insight?condition={condition}&lat={lat}&lon={lon}` - will return either `true` or `false` for every timestamp, for two predefined conditions:
     1. `veryHot`  - based on the condition `temperature > 30`
     2. `rainyAndCold` - based on the condition `temperature < 10 AND precipitation > 0.5`
 
-**Please note that Temperature is in Celsius, and Precipitation Rate in mm/hr.
+**Please note that Temperature is in Celsius, and Precipitation Rate is in mm/hr.
 
 ### Service Explanation
 
