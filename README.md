@@ -53,7 +53,7 @@ The service will expose a single route:
 
 - A working end to end service.
 - A github repository with your solution.
-- Add a section to your readme: `How to use this service` for example `http://my-cool-service.com/weather/insight?conditin=veryHotlat=42.332&lon=35.421` **Make sure that the URL that you are providing is WORKING!** (`curl <YOUR_URŁ>` should provide a result)
+- Add a section to your readme: `How to use this service` for example `http://my-cool-service.com/weather/insight?condition=veryHotlat=42.332&lon=35.421` **Make sure that the URL that you are providing is WORKING!** (`curl <YOUR_URŁ>` should provide a result)
 
 ### Implementation
 
@@ -68,6 +68,48 @@ The service should have 2 parts:
 - **Database**: SQL/NoSQL, whatever you think will be fast and good for this task.
 - You can use any free hosting provider such as [render.com](http://render.com/), Heroku, AWS, GCS, Azure, DigitalOcean, etc... (if you don't know any of them, we recommend using [render.com](http://render.com/) as it is the easiest to start with and we tested that the task can run on it).
 - Take your time to go over the instructions and attached data before you begin.
+- You can use the following examples to validate that your code is working as expected:
+    - **Request**: `http://{url}/weather/insight?lon=51.5&lat=24.5&condition=veryHot`
+      
+      **Response**:
+
+      ```json
+      [
+          {
+              "forecastTime": "2021-04-02T13:00:00Z",
+              "conditionMet": true
+          },
+          {
+              "forecastTime": "2021-04-02T13:00:00Z",
+              "conditionMet": true
+          },
+          {
+              "forecastTime": "2021-04-02T13:00:00Z",
+              "conditionMet": false
+          }
+      ]
+      ```
+  
+    - **Request**: `http://{url}/weather/insight?lon=51.5&lat=24.5&condition=rainyAndCold`
+      
+      **Response**:
+      
+      ```json
+      [
+          {
+              "forecastTime": "2021-04-02T13:00:00Z",
+              "conditionMet": false
+          },
+          {
+              "forecastTime": "2021-04-02T14:00:00Z",
+              "conditionMet": false
+          },
+          {
+              "forecastTime": "2021-04-02T15:00:00Z",
+              "conditionMet": true
+          }
+      ]
+      ```
 
 ### General
 
