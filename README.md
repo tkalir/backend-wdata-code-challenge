@@ -80,11 +80,11 @@ The service should have 2 parts:
               "conditionMet": true
           },
           {
-              "forecastTime": "2021-04-02T13:00:00Z",
+              "forecastTime": "2021-04-02T14:00:00Z",
               "conditionMet": true
           },
           {
-              "forecastTime": "2021-04-02T13:00:00Z",
+              "forecastTime": "2021-04-02T15:00:00Z",
               "conditionMet": false
           }
       ]
