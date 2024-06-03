@@ -1,7 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
-from app import app
 from sqlalchemy import create_engine, Column, Float, String, Integer, DateTime, Index, UniqueConstraint
 import os
+from code.app import app
 
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DB_URL')
 db = SQLAlchemy(app)

@@ -1,4 +1,4 @@
-from db_and_model import WeatherData, db
+from code.db_and_model import WeatherData, db
 from sqlalchemy import and_
 
 

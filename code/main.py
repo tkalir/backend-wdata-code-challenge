@@ -2,10 +2,10 @@ import click
 import os
 import logging
 
-from weather_reader import read_weather_data
-from db_and_model import db
-from flask_app import app
-from utils import file_names_in_directory, commit_in_chunks
+from code.weather_reader import read_weather_data
+from code.db_and_model import db
+from code.flask_app import app
+from code.utils import file_names_in_directory, commit_in_chunks
 
 COMMIT_SIZE = 8192
 logging.basicConfig(level=logging.DEBUG)

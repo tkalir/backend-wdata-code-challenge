@@ -1,9 +1,9 @@
 from flask import Flask, request, jsonify
 import logging
 
-from db_calls import search_weather
-from weather_search_conditions import get_condition_object
-from app import app
+from code.db_calls import search_weather
+from code.weather_search_conditions import get_condition_object
+from code.app import app
 
 WEATHER_INSIGHT_URL = "/weather/insight"
 

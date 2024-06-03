@@ -1,7 +1,7 @@
 import csv
 from datetime import datetime
 
-from db_and_model import WeatherData
+from code.db_and_model import WeatherData
 
 LATITUDE_CSV_COL = 'Latitude'
 LONGITUDE_CSV_COL = 'Longitude'
