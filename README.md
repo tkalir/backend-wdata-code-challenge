@@ -24,7 +24,7 @@ The service will expose a single route:
 
 ### Service Explanation
 
-### Route: `/weather/insight`
+### Route: GET `/weather/insight`
 
 - **Query Parameters**: lat, lon, condition
     - `condition` can be either `veryHot` or `rainyAndCold`
@@ -53,7 +53,7 @@ The service will expose a single route:
 
 - A working end to end service.
 - A github repository with your solution.
-- Add a section to your readme: `How to use this service` for example `http://my-cool-service.com/weather/insight?condition=veryHotlat=42.332&lon=35.421` **Make sure that the URL that you are providing is WORKING!** (`curl <YOUR_URŁ>` should provide a result)
+- Add a section to your readme: `How to use this service` for example `http://my-cool-service.com/weather/insight?condition=veryHot&lat=42.332&lon=35.421` **Make sure that the URL that you are providing is WORKING!** (`curl <YOUR_URŁ>` should provide a result)
 
 ### Implementation
 
