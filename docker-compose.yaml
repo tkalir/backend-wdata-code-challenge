@@ -1,0 +1,29 @@
+services:
+  db:
+    image: postgres:16.3
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: weatherweather
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+
+  server:
+    build: .
+    restart: always
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/usr/app
+    environment:
+      DB_URL: 'postgresql://user:weatherweather@db:5432/postgres'
+    depends_on:
+     - db
+
+
+volumes:
+  pgdata:
