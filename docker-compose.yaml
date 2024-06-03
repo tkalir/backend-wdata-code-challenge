@@ -18,7 +18,7 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - .:/usr/app
+      - ./input_data:/usr/app/input_data
     environment:
       DB_URL: 'postgresql://user:weatherweather@db:5432/postgres'
     depends_on:
